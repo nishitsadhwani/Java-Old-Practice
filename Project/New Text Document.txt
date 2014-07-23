@@ -1,0 +1,34 @@
+import java.util.Scanner;
+class monster
+{
+	public static void main(String args[])
+	{
+	
+		Scanner s= new Scanner(System.in);
+		
+		String eye_color;
+		System.out.println("\n Enter the eye colour");
+		eye_color=s.next();
+
+		String eye[7][2]={
+					{"Red","Green( Yellow + Blue )"},
+					{"Yellow","Purple( Red + Blue )"},
+					{"Blue","Orange( Yellow + Red )"},
+					{"Orange","Blue"},
+					{"Green","Red"},
+					{"Purple","Yellow"},
+					{"Black","No color"}
+				};
+		
+		for(int i=0;i<7;i++)
+		{
+			if( (eye_color.equals(eye[i][0])==1)
+			{
+				System.out.println("The color required is : " + eye[i][1]);
+			}
+			else
+			{
+				continue;
+			}
+		}
+		

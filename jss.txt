@@ -1,0 +1,37 @@
+import java.util.Scanner;
+class Publication
+{
+	String title= new String();
+	float price;
+	void getdata()
+	{
+		Scanner s=new Scanner( System.in);
+		title=s.next();
+		price=s.nextFloat();
+	}
+}		
+
+class Book extends Publication
+{
+	int page_count;
+	void getdata()
+	{
+		super.getdata();
+		Scanner s=new Scanner( System.in);
+		page_count=s.nextInt();
+	}
+}
+
+class Tape extend Publication
+{
+	int play_time;
+	void getdata()
+	{
+		super.getdata();
+		Scanner s=new Scanner( System.in);
+		play_time=s.nextInt();
+	}
+}
+
+
+	
